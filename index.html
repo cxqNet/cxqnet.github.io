@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            background-color: #004080;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        section {
+            padding: 40px;
+        }
+        .photo {
+            text-align: center;
+        }
+        .photo img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 4px solid #003366;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        h2 {
+            color: #003366;
+            font-size: 28px;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .skills {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            background-color: #e0e7ff;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 6px solid #003366;
+            font-size: 18px;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>你的名字</h1>
+</header>
+
+<nav>
+    <a href="#about">简介</a>
+    <a href="#experience">工作经验</a>
+    <a href="#skills">技能</a>
+    <a href="#contact">联系信息</a>
+</nav>
+
+<section id="about">
+    <div class="content">
+        <h2>简介</h2>
+        <div class="photo">
+            <img src="你的照片链接" alt="个人照片">
+        </div>
+        <p>这里写你的个人简介。可以包括你的背景、爱好、专业领域以及个人成就等。</p>
+    </div>
+</section>
+
+<section id="experience">
+    <div class="content">
+        <h2>工作经验</h2>
+        <p>详细描述你的工作经历，包括职位、公司名称、工作时间以及职责。</p>
+        <p><strong>职位1：</strong> 公司名称 （时间范围）</p>
+        <p>在这里简要描述你在该职位上的工作内容和成就。</p>
+
+        <p><strong>职位2：</strong> 公司名称 （时间范围）</p>
+        <p>同样描述你的另一个工作经历。</p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="content">
+        <h2>技能</h2>
+        <ul class="skills">
+            <li>技能1</li>
+            <li>技能2</li>
+            <li>技能3</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="content">
+        <h2>联系信息</h2>
+        <p>邮箱：<a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>电话：123-456-7890</p>
+        <p>社交媒体：<a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 你的名字 | <a href="mailto:your.email@example.com">联系我</a></p>
+</footer>
+
+</body>
+</html>
