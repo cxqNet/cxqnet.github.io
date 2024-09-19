@@ -70,11 +70,11 @@ python Gaussian_blur.py
 ## Training
 
 To train the model, first download the necessary pre-trained weights and datasets:
-1. **Pretrained Encoder Weights: **Download `vssmsmall_dp03_ckpt_epoch_238.pth` from Google drive and move the file to:
+1. **Pretrained Encoder Weights**:Download `vssmsmall_dp03_ckpt_epoch_238.pth` from Google drive and move the file to:
     `./SUM-main/net/pre_trained_weights/vssmsmall_dp03_ckpt_epoch_238.pth.`
 2. **Datasets:**
-- Note: If you have already set the dataset format during the inference phase, you ***do not need*** to set it again during the training phase.
-The dataset `AI4VA`can be downloaded from [this link](). Please place it in the `datasets` folder and confirm the file structure as follows:
+- Note: If you have already set the dataset format during the inference phase, you **do not need** to set it again during the training phase.
+The dataset `AI4VA`can be downloaded from [this link](https://drive.google.com/drive/folders/1_DCOJf0ist3twchYmQBRd_ASUwdqPiRP). Please place it in the `datasets` folder and confirm the file structure as follows:
 ```
 ADP-GFA
     |- SUM-main
