@@ -71,7 +71,7 @@ python Gaussian_blur.py
 To train the model, first download the necessary pre-trained weights and datasets:
 1. **Pretrained Encoder Weights**:Download `vssmsmall_dp03_ckpt_epoch_238.pth` from Google drive and move the file to:
 
-    `./SUM-main/net/pre_trained_weights/vssmsmall_dp03_ckpt_epoch_238.pth.`
+    `./SUM-main/net/checkpoint/vssmsmall_dp03_ckpt_epoch_238.pth.`
 3. **Datasets:**
 
 The dataset `AI4VA`can be downloaded from [this link](https://drive.google.com/drive/folders/1_DCOJf0ist3twchYmQBRd_ASUwdqPiRP). Please place it in the `datasets` folder and confirm the file structure as follows:
