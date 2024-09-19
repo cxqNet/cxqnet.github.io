@@ -16,7 +16,7 @@ conda install pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=
 pip install -r requirements.txt
 ```
 ### Datasets Preparation
-The dataset `AI4VA`can be downloaded from [this link](). Please place it in the `datasets` folder and confirm the file structure as follows:
+The dataset `AI4VA`can be downloaded from [this link](https://drive.google.com/drive/folders/1_DCOJf0ist3twchYmQBRd_ASUwdqPiRP). Please place it in the `datasets` folder and confirm the file structure as follows:
 ```
 ADP-GFA
     |- SUM-main
@@ -69,7 +69,7 @@ python Gaussian_blur.py
 ## Training
 
 To train the model, first download the necessary pre-trained weights and datasets:
-1. **Pretrained Encoder Weights**:Download `vssmsmall_dp03_ckpt_epoch_238.pth` from Google drive and move the file to:
+1. **Pretrained Encoder Weights**:Download `vssmsmall_dp03_ckpt_epoch_238.pth` from [Google drive](https://drive.google.com/drive/folders/1_DCOJf0ist3twchYmQBRd_ASUwdqPiRP) and move the file to:
 
     `./SUM-main/net/checkpoint/vssmsmall_dp03_ckpt_epoch_238.pth.`
 3. **Datasets:**
