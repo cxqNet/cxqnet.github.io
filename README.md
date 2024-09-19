@@ -4,14 +4,13 @@ To train and perform inference with SUM, follow these steps:
 ### Setting Up Virtual Environment py310
 
 Create Conda Environment and Install Dependencies
-
-Create and activate the virtual environment:
+- Create and activate the virtual environment:
 
 ```
 conda create --name py310 python=3.10
 conda activate sum
 ```
-Install PyTorch and other necessary libraries:
+- Install PyTorch and other necessary libraries:
 ```
 conda install pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=12.1 -c pytorch -c nvidia
 pip install -r requirements.txt
@@ -71,10 +70,13 @@ python Gaussian_blur.py
 
 To train the model, first download the necessary pre-trained weights and datasets:
 1. **Pretrained Encoder Weights**:Download `vssmsmall_dp03_ckpt_epoch_238.pth` from Google drive and move the file to:
+
     `./SUM-main/net/pre_trained_weights/vssmsmall_dp03_ckpt_epoch_238.pth.`
-2. **Datasets:**
-- Note: If you have already set the dataset format during the inference phase, you **do not need** to set it again during the training phase.
+3. **Datasets:**
+
 The dataset `AI4VA`can be downloaded from [this link](https://drive.google.com/drive/folders/1_DCOJf0ist3twchYmQBRd_ASUwdqPiRP). Please place it in the `datasets` folder and confirm the file structure as follows:
+- Note: If you have already set the dataset format during the inference phase, you **do not need** to set it again during the training phase.
+
 ```
 ADP-GFA
     |- SUM-main
