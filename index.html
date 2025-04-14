@@ -1,196 +1,27 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人主页</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f2f5;
-            color: #333;
-        }
-        header {
-            background-color: #2a9d8f;
-            color: white;
-            padding: 50px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 40px;
-            font-weight: 700;
-        }
-        header p {
-            font-size: 20px;
-            margin-top: 10px;
-            font-weight: 300;
-        }
-        nav {
-            background-color: #264653;
-            padding: 15px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 18px;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #e9c46a;
-        }
-        section {
-            padding: 60px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        .photo {
-            text-align: center;
-        }
-        .photo img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border: 5px solid #2a9d8f;
-            transition: transform 0.3s ease;
-        }
-        .photo img:hover {
-            transform: scale(1.1);
-        }
-        .content {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        h2 {
-            color: #264653;
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #555;
-        }
-        .experience-card {
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-        .skills {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .skill {
-            background-color: #e9c46a;
-            color: #264653;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-size: 16px;
-        }
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 40px;
-        }
-        .contact-info a {
-            color: #2a9d8f;
-            text-decoration: none;
-            font-size: 18px;
-            margin: 10px 0;
-            transition: color 0.3s ease;
-        }
-        .contact-info a:hover {
-            color: #e76f51;
-        }
-        footer {
-            background-color: #264653;
-            color: white;
-            text-align: center;
-            padding: 30px;
-            font-size: 14px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>我们的生活记录</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>欢迎来到我们的生活记录</h1>
+    <nav>
+      <a href="index.html">首页</a>
+      <a href="members.html">我们的成员</a>
+      <a href="diary.html">生活记录</a>
+    </nav>
+  </header>
 
-<header>
-    <h1>你好，我是曹旭强</h1>
-    <p>全栈开发者 | 技术爱好者 | 创造力驱动者</p>
-</header>
+  <main>
+    <p>这里是我们记录生活的地方，珍藏回忆，分享感动。</p>
+    <p>成员：曹旭强、穆智航、何瑞星、杨晚秀</p>
+  </main>
 
-<nav>
-    <a href="#about">简介</a>
-    <a href="#experience">工作经验</a>
-    <a href="#skills">技能</a>
-    <a href="#contact">联系信息</a>
-</nav>
-
-<section id="about">
-    <div class="content">
-        <h2>关于我</h2>
-        <div class="photo">
-            <img src="你的照片链接" alt="照片暂无">
-        </div>
-        <p>我是一个热爱技术的全栈开发者，喜欢通过代码解决复杂的问题并创建有价值的项目。拥有多年的开发经验，擅长于前端和后端的各类技术栈。</p>
-    </div>
-</section>
-
-<section id="experience">
-    <div class="content">
-        <h2>工作经验</h2>
-        <div class="experience-card">
-            <h3>高级开发者 - ABC科技公司</h3>
-            <p>2021 - 现在</p>
-            <p>在ABC科技公司，我带领团队设计和开发了多个创新型产品，专注于使用现代前端框架（如React）和后端技术（如Node.js）来构建高效的解决方案。</p>
-        </div>
-        <div class="experience-card">
-            <h3>软件工程师 - XYZ初创公司</h3>
-            <p>2018 - 2021</p>
-            <p>作为核心开发成员之一，我为公司的多个关键项目提供技术支持，使用Python和Django框架构建了高度可扩展的后端服务。</p>
-        </div>
-    </div>
-</section>
-
-<section id="skills">
-    <div class="content">
-        <h2>技能</h2>
-        <div class="skills">
-            <div class="skill">JavaScript</div>
-            <div class="skill">React</div>
-            <div class="skill">Node.js</div>
-            <div class="skill">Python</div>
-            <div class="skill">Django</div>
-            <div class="skill">HTML & CSS</div>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
-    <div class="content">
-        <h2>联系信息</h2>
-        <div class="contact-info">
-            <a href="mailto:your.email@example.com">📧 your.email@example.com</a>
-            <a href="tel:+1234567890">📞 +123 456 7890</a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">🔗 LinkedIn</a>
-            <a href="https://github.com/yourgithub" target="_blank">💻 GitHub</a>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2024 曹旭强 | 保留所有权利</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 我们的生活记录</p>
+  </footer>
 </body>
 </html>
