@@ -57,17 +57,17 @@ nav ul li a:hover {
 }
 
 .love-days {
-  display: inline-flex; /* 让数字和单位在一行 */
-  align-items: baseline; /* 底部对齐 */
-  gap: 4px; /* 间距 */
+    display: inline-flex; /* 让数字和单位在一行 */
+    align-items: baseline; /* 底部对齐 */
+    gap: 4px; /* 间距 */
 }
 #days-together {
-  font-size: 32px; /* 天数更大 */
-  font-weight: bold;
+    font-size: 40px; /* 天数更大 */
+    font-weight: bold;
 }
 .unit {
-  font-size: 32px; /* 单位稍小 */
-  font-weight: bold;
+    font-size: 40px; /* 单位稍小 */
+    font-weight: bold;
 }
 
 /* 首页 Hero 区域 */
