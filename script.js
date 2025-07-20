@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // =================================================================
     
     // !!! 重要: 请在这里设置你们真正在一起的日期 !!!
-    const startDate = new Date('2023-05-09'); // 格式: YYYY-MM-DD
+    const startDate = new Date('2025-05-09'); // 格式: YYYY-MM-DD
 
     const today = new Date();
     const timeDiff = today.getTime() - startDate.getTime();
