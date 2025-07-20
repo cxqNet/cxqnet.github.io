@@ -1,0 +1,289 @@
+/* 全局样式 */
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6f6; /* 温馨的淡粉色背景 */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 导航栏 */
+header {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eee;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 90%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d87093; /* 浪漫的玫瑰粉 */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d87093;
+}
+
+/* 首页 Hero 区域 */
+.hero {
+    height: 90vh;
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::after { /* 添加一个遮罩层让文字更清晰 */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.days-counter {
+    background-color: rgba(216, 112, 147, 0.8);
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* 内容区域通用样式 */
+.content-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #d87093;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+/* 照片墙 */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.photo-item:hover img {
+    transform: scale(1.1);
+}
+
+.photo-item .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: white;
+    padding: 2rem 1rem 1rem;
+    font-size: 1rem;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.photo-item:hover .caption {
+    transform: translateY(0);
+}
+
+/* 旅行足迹 */
+.journal-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: left;
+}
+
+.journal-entry {
+    display: flex;
+    gap: 2rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    align-items: center;
+}
+
+.journal-entry img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.entry-content h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* 纪念日日历 */
+.calendar-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.calendar-header h3 {
+    font-size: 1.8rem;
+    color: #d87093;
+    margin: 0 0 1.5rem 0;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.calendar-day, .calendar-weekday {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.calendar-weekday {
+    background-color: transparent;
+    color: #aaa;
+}
+
+.calendar-day.empty {
+    background-color: transparent;
+}
+
+/* 关键的纪念日样式 */
+.calendar-day.special-day {
+    background-color: #ffe4e1; /* 浅粉色背景 */
+    color: #d87093;
+    position: relative;
+    font-weight: bold;
+    border: 2px solid #d87093;
+}
+
+/* 用伪元素画一个爱心 */
+.special-day::after {
+    content: '❤';
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 1.2rem;
+    color: #ff4757;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.anniversary-note {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* 页脚 */
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: #f8f0f0;
+    color: #888;
+}
+
+/* 响应式设计，适配手机 */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .hero p { font-size: 1.2rem; }
+    nav ul { display: none; } /* 简化手机导航，或可以做成汉堡菜单 */
+    .journal-entry { flex-direction: column; }
+    .journal-entry img { width: 100%; height: auto; }
+}
