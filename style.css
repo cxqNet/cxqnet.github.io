@@ -1,14 +1,13 @@
-/* 全局样式 */
 body {
     font-family: 'Noto Sans SC', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fdf6f6; /* 温馨的淡粉色背景 */
+    background-color: #fdf6f6; /* 粉色背景 */
     color: #333;
     line-height: 1.6;
 }
 
-/* 导航栏 */
+/* 导航 */
 header {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
@@ -31,7 +30,7 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #d87093; /* 浪漫的玫瑰粉 */
+    color: #d87093; 
 }
 
 nav ul {
@@ -57,20 +56,20 @@ nav ul li a:hover {
 }
 
 .love-days {
-    display: inline-flex; /* 让数字和单位在一行 */
-    align-items: baseline; /* 底部对齐 */
-    gap: 4px; /* 间距 */
+    display: inline-flex; 
+    align-items: baseline;
+    gap: 4px;
 }
 #days-together {
-    font-size: 40px; /* 天数更大 */
+    font-size: 40px;
     font-weight: bold;
 }
 .unit {
-    font-size: 40px; /* 单位稍小 */
+    font-size: 40px;
     font-weight: bold;
 }
 
-/* 首页 Hero 区域 */
+
 .hero {
     height: 90vh;
     background: url('images/hero.jpg') no-repeat center center/cover;
@@ -82,7 +81,7 @@ nav ul li a:hover {
     position: relative;
 }
 
-.hero::after { /* 添加一个遮罩层让文字更清晰 */
+.hero::after { 
     content: '';
     position: absolute;
     top: 0;
@@ -118,7 +117,6 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-/* 内容区域通用样式 */
 .content-section {
     max-width: 1200px;
     margin: 4rem auto;
@@ -138,7 +136,7 @@ h2 {
     font-size: 1.1rem;
 }
 
-/* 照片墙 */
+
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -211,7 +209,7 @@ h2 {
     color: #333;
 }
 
-/* 纪念日日历 */
+
 .calendar-container {
     background: white;
     padding: 2rem;
@@ -252,16 +250,16 @@ h2 {
     background-color: transparent;
 }
 
-/* 关键的纪念日样式 */
+
 .calendar-day.special-day {
-    background-color: #ffe4e1; /* 浅粉色背景 */
+    background-color: #ffe4e1; 
     color: #d87093;
     position: relative;
     font-weight: bold;
     border: 2px solid #d87093;
 }
 
-/* 用伪元素画一个爱心 */
+
 .special-day::after {
     content: '❤';
     position: absolute;
@@ -284,7 +282,7 @@ h2 {
     color: #555;
 }
 
-/* 页脚 */
+
 footer {
     text-align: center;
     padding: 2rem;
@@ -297,7 +295,7 @@ footer {
 @media (max-width: 768px) {
     .hero h1 { font-size: 2.5rem; }
     .hero p { font-size: 1.2rem; }
-    nav ul { display: none; } /* 简化手机导航，或可以做成汉堡菜单 */
+    nav ul { display: none; } 
     .journal-entry { flex-direction: column; }
     .journal-entry img { width: 100%; height: auto; }
 }
