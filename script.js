@@ -6,9 +6,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const startDate = new Date('2025-5-8');
 
+    startDate.setHours(0, 0, 0, 0);
+
     const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
     const timeDiff = today.getTime() - startDate.getTime();
-    const daysTogether = Math.floor((timeDiff / (1000 * 60 * 60 * 24)) + 1);
+    const daysTogether = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
 
     document.getElementById('days-together').textContent = daysTogether;
 
@@ -53,4 +57,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
+
 
