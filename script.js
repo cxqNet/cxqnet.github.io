@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const calendarGrid = document.getElementById('calendar-grid');
     const year = 2025;
     const month = 4; 
-    const specialDay = 9; 
+    const specialDay = 8; 
 
     const firstDayOfMonth = new Date(year, month, 1).getDay();
     const daysInMonth = new Date(year, month + 1, 0).getDate();
@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
+
 
 
 
