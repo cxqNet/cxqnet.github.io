@@ -72,7 +72,7 @@ nav ul li a:hover {
 
 .hero {
     height: 90vh;
-    background: url('images/hero.jpg') no-repeat center center/cover;
+    background: url('images/hero1.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,3 +299,4 @@ footer {
     .journal-entry { flex-direction: column; }
     .journal-entry img { width: 100%; height: auto; }
 }
+
